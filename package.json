@@ -1,20 +1,17 @@
 {
-  "name": "electron-quick-start",
+  "name": "Rekoda",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Clipboard recorder",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/64lines/Rekoda",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "electron-app",
+    "nodejs"
   ],
-  "author": "GitHub",
+  "author": "Julian Murillo",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.6.2"
