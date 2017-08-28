@@ -6,7 +6,12 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css' integrity='sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M' crossorigin='anonymous'>
     <style>
       .container {
-        padding-top: 1em;
+        position: fixed;
+        width: 100%;
+        overflow: auto;
+        height: 100%;
+        padding-top: 58px;
+        max-width: none;
       }
 
       .navbar {
@@ -15,8 +20,8 @@
         z-index: 100;
       }
 
-      #clipboard {
-        margin-top: 60px;
+      .container::-webkit-scrollbar { 
+          display: none; 
       }
     </style>
     <script>const jQuery = require('jQuery');</script>
