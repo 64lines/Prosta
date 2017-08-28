@@ -9,9 +9,14 @@
         padding-top: 1em;
       }
 
+      .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+      }
+
       #clipboard {
-        height: 400px;
-        overflow-y: scroll;
+        margin-top: 60px;
       }
     </style>
     <script>const jQuery = require('jQuery');</script>
@@ -27,19 +32,14 @@
               <a class='nav-link' href='#'>Clipboard recorder</span></a>
             </li>
           </ul>
+          <form class="form-inline">
+            <input id='search-text' type="text" class="form-control mr-sm-2" placeholder="Search for..." aria-label="Search for...">
+            <button class="btn btn btn-outline-success my-2 my-sm-0" id='copy'>Copy</button>
+          </form>
       </nav>
 
       <!-- Container -->
       <div class='container'>
-        <!-- Buttons panel -->
-        <p>
-            <div class="input-group">
-              <input id='search-text' type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-primary" id='copy'>Copy</button>
-              </span>
-            </div>
-        </p>
 
         <!-- Clipboard list -->
         <p>

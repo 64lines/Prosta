@@ -20,6 +20,16 @@ module.exports = {
                 }
             })
         });
+
+        $('#copy').click((event) => {
+            const text = $('.active').text();
+            
+            if (text) {
+                clipboardy.writeSync(text)
+                console.log("Copy text: " + text)
+            }
+            event.preventDefault()
+        })
     },
 
     /**
@@ -29,11 +39,6 @@ module.exports = {
         $('.list-group-item').click((event) => {
             $('.list-group-item').removeClass('active')
             $(event.target).addClass('active')
-        })
-
-        $('#copy').click((event) => {
-            const text = $('.active').text()
-            clipboardy.writeSync(text)
         })
     }
 }
