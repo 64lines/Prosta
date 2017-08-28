@@ -1,12 +1,9 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// All of the Node.js APIs are available in this process.
 const $ = require('jQuery')
 const clipboardy = require('clipboardy')
 const events = require('./events')
 
 const recorder = {
-    
+
     /**
      * Adds new item and applies the events on it.
      */
@@ -41,5 +38,3 @@ const recorder = {
     }
 }
 module.exports = recorder
-
-
