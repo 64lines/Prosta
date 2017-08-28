@@ -19,7 +19,8 @@ const recorder = {
      * and adds it to the clipboard element.
      */
     collectClipboardData: () => {
-        let clipboardList = localStorage.getItem('clipboardList').split(',') || []
+        let storedList = localStorage.getItem('clipboardList');
+        let clipboardList = storedList ? storedList.split(',') : []
 
         $.each(clipboardList, (key, text) => {
             recorder.addItem($('#clipboard'), text)
