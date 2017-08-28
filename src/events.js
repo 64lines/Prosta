@@ -23,7 +23,7 @@ module.exports = {
 
         $('#copy').click((event) => {
             const text = $('.active').text();
-            
+
             if (text) {
                 clipboardy.writeSync(text)
                 console.log("Copy text: " + text)
@@ -39,6 +39,7 @@ module.exports = {
         $('.list-group-item').click((event) => {
             $('.list-group-item').removeClass('active')
             $(event.target).addClass('active')
+            event.preventDefault()
         })
     }
 }
