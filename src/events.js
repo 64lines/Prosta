@@ -1,7 +1,6 @@
 const $ = require('jQuery')
 const clipboardy = require('clipboardy')
 
-
 module.exports = {
     /**
      * Applies all the events related to the Inputs

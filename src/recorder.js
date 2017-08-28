@@ -6,6 +6,10 @@ const clipboardy = require('clipboardy')
 const events = require('./events')
 
 const recorder = {
+    
+    /**
+     * Adds new item and applies the events on it.
+     */
     addItem: (element, text) => {
         let child = $('<a>').attr('href', '#')
             .addClass('list-group-item').text(text)
